@@ -1,0 +1,133 @@
+.handle{
+    transform: translate(-0%, -50%);
+    margin: 0;
+    padding: 0;
+
+}
+
+.handle-li{
+    list-style: none;
+    margin: 0 0;
+}
+
+
+.handle .handle-li .handle-a .handle-icon {
+    font-size: 30px;
+    color: #262626;
+    line-height: 80px;
+    transition: 0.5s;
+    padding-right: 14px;
+}
+
+ /* .fab {
+     font-size: 300px !important;
+ } */
+
+.handle .handle-li .handle-a span {
+    padding: 0;
+    margin: 0;
+    color: #262626;
+    letter-spacing: 4px;
+    transition: 00.5s;
+}
+
+.handle .handle-li .handle-a {
+    
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    padding-left: 15px;
+    background: #fff;
+    text-align: center;
+    transform: rotate(-0deg) skew(0deg) translate(0, 0);
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+}
+/* 
+.handle .handle-li .handle-a::before {
+    content: "";
+    height: 100%;
+    width: 20px;
+    background: #b1b1b1;
+    transition: 00.5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+
+.handle .handle-li .handle-a::after {
+    content: "";
+    height: 20px;
+    width: 100%;
+    background: #b1b1b1;
+    transition: 00.5s;
+    transform: rotate(0deg) skewX(-45deg);
+} */
+
+.handle .handle-li .handle-a:hover {
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+.handle .handle-li:hover {
+    color: #fff;
+}
+
+.handle .handle-li:hover .handle-icon{
+    color: #fff;
+} 
+
+.handle .handle-li:hover span {
+    color: #fff;
+}
+
+.handle-li:hover:nth-child(1) a {
+    background: #3b5998;
+}
+
+.handle .handle-li:hover:nth-child(1) a::before {
+    background: #365492;
+}
+
+.handle .handle-li:hover:nth-child(1) a::after {
+    background: #365492;
+}
+
+.handle .handle-li:hover:nth-child(2) a {
+    background: #00aced;
+}
+
+.handle .handle-li:hover:nth-child(2) a::before {
+    background: #097aa5;
+}
+
+.handle .handle-li:hover:nth-child(2) a::after {
+    background: #53b9e0;
+}
+
+.handle .handle-li:hover:nth-child(3) a {
+    background: #e4405f;
+}
+
+.handle .handle-li:hover:nth-child(3) a::before {
+    background: #d81c3f;
+}
+
+.handle .handle-li:hover:nth-child(3) a::after {
+    background: #e46880;
+}
+
+.handle .handle-li:hover:nth-child(3n + 4) a {
+    background: #0fabf3;
+}
+
+.handle .handle-li:hover:nth-child(3n + 4) a::before {
+    background: #1ca3d8;
+
+}
+
+.handle .handle-li:hover:nth-child(3n + 4) a::after {
+    background: #4cd6e9;
+}
+
