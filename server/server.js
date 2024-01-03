@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import Message from './models/message.js';
 // const Message = require ('../server/models/message');
 
-// Rest of your server code remains the same
+
 
 
 const app = express();
