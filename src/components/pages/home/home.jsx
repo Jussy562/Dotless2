@@ -3,6 +3,7 @@ import HomeBanner from '../../banner/homeBanner'
 import DotlesssService from '../../dotlessService/dotlesssService'
 import serviceFiles from '../../dotlessService/ServiceApi'
 import HowItWork from '../../howItWork/howItWork'
+import SelfLaundry from '../../dotlessService/dotlessLaundry'
 // import Testimony from '../../customerTestimony/testimony'
 
 
@@ -44,6 +45,9 @@ function Home() {
               border-l-0 border-r-0 border-t-0 '>
                 Services
               </h3>
+            </div>
+            <div>
+              <SelfLaundry />
             </div>
             
             <div className='flex flex-col gap-16 mt-12 '>

@@ -12,9 +12,9 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost:27017/contact', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+mongoose.connect('mongodb+srv://justluvia:baripago2345@cluster0.lxj7rkd.mongodb.net/Dotless?retryWrites=true&w=majority', {
+  // useNewUrlParser: true,
+  // useUnifiedTopology: true,
 });
 
 const db = mongoose.connection;
@@ -23,7 +23,12 @@ db.once('open', () => {
   console.log('Connected to MongoDB');
 });
 
-app.post('/api/messages', async (req, res) => {
+// Root path route
+app.get('/', (req, res) => {
+  res.send('Hello, this is your Express server!');
+});
+
+app.post('/api/contactMessages', async (req, res) => {
     try {
         // Extract data from the request body
         const { name, email, message } = req.body;
@@ -42,7 +47,7 @@ app.post('/api/messages', async (req, res) => {
         res.status(201).json({ message: 'Message sent successfully' });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: 'An error occurred' });
+    res.status(500).json({ error: 'An error occurred while saving the message' });
   }
 });
 

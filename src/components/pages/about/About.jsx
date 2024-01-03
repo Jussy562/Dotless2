@@ -3,26 +3,26 @@ import wash from '/asset/wash.jpg'
 import cleaning3 from '/asset/cleaning3.jpg'
 function About() {
   return (
-    <div className='bg-white  py-10 md:py-20 mt-24 md:mt-0'>
+    <div className='bg-white  py-10 md:py-20 md:pb-0 pb-0 mt-24 md:mt-0'>
       <div className='flex flex-col md:flex-row w-full justify-center items-center h-100vh md:px-20 px-4 py-10 md:py-20'>
         <div className='flex w-full md:w-1/2 justify-center items-center relative'>
           <div className=''>
             <img src={wash} alt='About' className="h-80 w-80 rounded-full" />
           </div>
           <div className='flex flex-row p-2 px-4 justify-center items-center absolute
-           left-20 top-0 rounded-md bg-white shadow-lg z-10 w-36'>
+           left-20 top-0 rounded-md bg-white shadow-lg shadow-black z-10 w-36'>
               <p className='text-sm font-bold text-blue-500'>Domestic</p>
           </div>
           <div className='flex flex-row p-2 px-4 justify-center items-center absolute
-           right-10 top-10 rounded-md bg-white shadow-lg z-10 w-36'>
+           right-10 top-10 rounded-md bg-white shadow-lg shadow-black z-10 w-36'>
               <p className='text-sm font-bold text-yellow-600'>Event</p>
           </div>
           <div className='flex flex-row p-2 px-4 justify-center items-center absolute
-           left-4 top-30 rounded-md bg-white shadow-lg z-10 w-36'>
+           left-4 top-30 rounded-md bg-white shadow-lg shadow-black z-10 w-36'>
               <p className='text-sm font-bold text-red-500'>Site</p>
           </div>
           <div className='flex flex-row p-2 px-4 justify-center items-center absolute
-           right-10 top-60 rounded-md bg-white shadow-lg z-10 w-36'>
+           right-10 top-60 rounded-md bg-white shadow-lg shadow-black z-10 w-36'>
               <p className='text-sm font-bold text-green-500'>Office/Industrial</p>
           </div>
         </div>
@@ -42,7 +42,7 @@ function About() {
         </div>
       </div>
      
-      <div className='w-full flex flex-col gap-4 mb-8 bg-blue-100 md:px-20 px-4 py-4 md:py-20'>
+      <div className='w-full flex flex-col gap-4 mb-0 bg-blue-100 md:px-20 px-4 py-4 md:py-20'>
         <h3 className='text-xl md:text-2xl font-bold text-blue-400 mb-4'>
           Why Choose Dotless?
         </h3>
@@ -70,17 +70,19 @@ function About() {
         </div>
         
       </div>
-      <div className='w-full flex flex-col md:flex-row gap-4 justify-center items-center'>
-        <div className='w-full md:w-1/2 flex flex-row justify-end relative'>
-            <img src={cleaning3} alt='cleaning' className="h-60 w-auto" />
-            
-        </div>
-        <div className='w-full md:w-1/2 p-0 md:p-2 flex flex-row text-start justify-start items-center'>
-            <p className='text-lg text-gray-900 mb-8 w-dull md:w-2/3'>
-              <span className='text-blue-400 font-bold'>Dotless</span> is here to make your life easier and your spaces cleaner. 
-              We invite you to experience the difference with <span className='text-blue-400 font-bold'>Dotless</span> Cleaning Service. 
-              Contact us today to schedule your first cleaning!
-            </p>
+      <div className='h-100vh pt-20 pb-20 bg-black'>
+        <div className='w-full flex flex-col md:flex-row gap-4 justify-center items-center'>
+          <div className='w-full md:w-1/2 flex flex-row justify-end relative'>
+              <img src={cleaning3} alt='cleaning' className="h-60 w-auto" />
+              
+          </div>
+          <div className='w-full md:w-1/2 p-0 md:p-2 flex flex-row text-start justify-start items-center'>
+              <p className='text-lg text-gray-100 mb-8 w-dull md:w-2/3'>
+                <span className='text-blue-400 font-bold'>Dotless</span> is here to make your life easier and your spaces cleaner. 
+                We invite you to experience the difference with <span className='text-blue-400 font-bold'>Dotless</span> Cleaning Service. 
+                Contact us today to schedule your first cleaning!
+              </p>
+          </div>
         </div>
       </div>
      
