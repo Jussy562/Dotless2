@@ -38,7 +38,7 @@ function About() {
             We offer a wide range of cleaning services to suit your specific requirements. Our services include:
             Domestic cleaning, Office/Industrial Cleaning, Event Cleaning, and Site Cleaning. We also have a 
             self-laundary centers that you can walking and do your laundary at your own convenience using our modern 
-            laundary machines. 
+            laundary machines.
             Dotless is here to make your life easier and your spaces cleaner.
           </p>
         </div>
