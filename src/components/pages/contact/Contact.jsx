@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import axios from 'axios';
 import contact from '/asset/contact.svg'
 import SecondaryButton from '../../button/SecondaryButton'
 import Button from '../../button/button';
@@ -7,6 +8,7 @@ import cleaning8 from '/asset/cleaning8.jpg';
 
 
 function Contact() {
+      const [loading, setLoading] = useState(false);
       const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -25,23 +27,34 @@ function Contact() {
 
       const handleSubmit = (e) => {
         e.preventDefault();
+        setLoading(true);
 
         // Use Axios to send the data to the backend.
-        axios.post('/api/contactMessages', formData)
+        axios.post('http://localhost:5000/api/contactMessages', formData)
           .then((response) => {
             // Handle the response from the backend, e.g., show a success message.
            setFeedback({
               message: 'Message sent successfully!',
               type: 'success',
             });
+            setFormData({
+              name: '',
+              email: '',
+              message: '',
+            });
           })
           .catch((error) => {
             // Handle any errors, e.g., show an error message.
+            console.error('Error sending message:', error);
             setFeedback({
               message: 'An error occurred while sending the message.',
               type: 'error',
             });
+          })
+          .finally(() => {
+            setLoading(false);
           });
+          
       };
   return (
     <div className='bg-white  mt-24 md:mt-20'>
