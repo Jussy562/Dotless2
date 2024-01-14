@@ -7,7 +7,7 @@ import howItWorkFiles from './howItWorkFile'
 function HowItWork({item}) {
   return (
     <div className='flex flex-col'>
-        <div className='flex mb-8'>
+        <div className='flex mb-8 pb-12'>
             <h4 className='text-black text-lg md:text-xl font-bold'>
                 It is easy to use <span className='text-blue-300 font-extrabold'>DOTLESS</span>.
                 All you have to do is to follow the steps below:

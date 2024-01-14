@@ -38,9 +38,11 @@
 }
 
 .dotless-steps {
-  border-radius: 9% 91% 21% 79% / 65% 23% 77% 35% !important;
+  /* border-radius: 9% 91% 21% 79% / 65% 23% 77% 35% !important;
   background: rgb(26,122,198);
   background: linear-gradient(90deg, rgba(26,122,198,0.7567401960784313) 27%, rgba(9,208,241,1) 96%, rgba(0,212,255,1) 100%);
   box-shadow:  5px 5px 10px #5a5a5a,
-             -5px -5px 10px #ffffff;
+             -5px -5px 10px #ffffff; */
+             background: rgb(235,240,241);
+             background: linear-gradient(90deg, rgba(235,240,241,1) 0%, rgba(228,228,236,1) 65%, rgba(230,231,231,1) 100%);
 }
