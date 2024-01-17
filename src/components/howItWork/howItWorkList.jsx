@@ -1,5 +1,5 @@
 import React from 'react';
-import signup from '/asset/signup.svg';
+import { motion } from "framer-motion"
 
 function HowItWorkList({item}) {
   return (
@@ -20,10 +20,14 @@ function HowItWorkList({item}) {
                        </div>
                       </div>
                     
-                      
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5 }}
+                      >
                       <h4 className='text-lg font-bold text-blue-400 mb-4'>{item.name}</h4>
                       <p className='text-sm text-black font-light'>{item.desc}</p>
-                    
+                    </motion.div>
                     
                 </div>
              </li>

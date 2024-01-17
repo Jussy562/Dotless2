@@ -2,6 +2,7 @@ import React from 'react'
 import DotlesssService from '../../dotlessService/dotlesssService'
 import serviceFiles from '../../dotlessService/ServiceApi'
 import wash from '/asset/wash.jpg'
+import SelfLaundry from '../../dotlessService/dotlessLaundry'
 
 function Services() {
   return (
@@ -50,7 +51,9 @@ function Services() {
                 Choose a service that suit your need and scheduke a time with us
               </h3>
             </div>
-            
+            <div>
+            <SelfLaundry />
+            </div>
             <div className='flex flex-col gap-16 mt-12 '>
               {
                 serviceFiles.map((item) => (
