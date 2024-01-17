@@ -22,7 +22,7 @@ function HomeBanner() {
                 </p>
             </motion.div>
                 <div className='w-full md:w-auto text-l md:text-xl'>
-                    <Button title="Book Now"  />
+                    <Button title="Book Now" path= "/services"  />
                 </div>
                 
             </div>
