@@ -27,7 +27,7 @@ function HomeBanner() {
                 
             </div>
         </div>
-        <div className='w-full md:w-1/2'>
+        <div className='w-full md:w-1/2 bg-slate-400 rounded-full'>
             <div>
                 <span>
                     <img src='/asset/clean.png' alt='dotless banner' className=' w-full md:motion-safe:animate-bounce'   />

@@ -10,7 +10,7 @@ function DotlesssService({item}) {
                 <p className='text-sm md:text-lg text-gray-900'>{item.desc}</p>
             </div>
             <div className='w-auto mt-8'>
-                <Button title="Book Now"  />
+                <Button title="Book Now" path="/booking"  />
             </div>
         </div>
         <div className='w-full md:w-1/2 flex md:justify-end'>

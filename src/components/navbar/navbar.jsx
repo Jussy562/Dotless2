@@ -21,11 +21,11 @@ function Navbar() {
               
           </a>
          
-          <div onClick={() => setOpen(!open)} className=' md:hidden text-3xl cursor-pointer'>
+          <div onClick={() => setOpen(!open)} className=' md:hidden text-3xl cursor-pointer text-black'>
             {/* <ion-icon name={open ? "close-outline" : "menu-outline"}></ion-icon> */}
             {
               !open ? 
-              <CgMenuMotion /> 
+              <CgMenuMotion  /> 
               : 
               <RiCloseLine />
             } 
