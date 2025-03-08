@@ -1,4 +1,4 @@
-import React from 'react'
+
 import DotlesssService from '../../dotlessService/dotlesssService'
 import serviceFiles from '../../dotlessService/ServiceApi'
 import wash from '/asset/wash.jpg'

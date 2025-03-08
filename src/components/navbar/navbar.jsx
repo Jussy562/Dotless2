@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import  {useState} from 'react';
 import { CgMenuMotion } from 'react-icons/cg';
 import { RiCloseLine } from 'react-icons/ri';
 import Button from '../button/button';

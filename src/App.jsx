@@ -10,6 +10,7 @@ import Services from './components/pages/services/Services';
 import Contact from './components/pages/contact/Contact';
 import Login from './components/pages/login/Login';
 import Booking from './components/pages/booking/Booking';
+import Checkout from './components/pages/checkout/Checkout';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path='/contact' element={<Contact />} />
             <Route path='/login' element={<Login />} />
             <Route path='/booking' element={<Booking />} />
+            <Route path='/checkout' element={<Checkout />} />
         </Routes>
         <Footer />
       </Router>

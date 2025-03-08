@@ -1,4 +1,4 @@
-import React from 'react'
+
 import SocialIconsMobile from '../socialIcon/iconsForMobile';
 import SocialIcons from '../socialIcon/socialIcons';
 // import handles from '../socialIcon/socialIconFile';
@@ -72,7 +72,7 @@ function Footer() {
                                 <li>
                                     <a href='/' className='text-xl text-gray-300 
                                     hover:text-blue-300'>
-                                        +2349035401231
+                                        +2349035684869
                                     </a>
                                 </li>
                             </ul>
@@ -92,7 +92,7 @@ function Footer() {
        
         <hr />
         <div className='flex justify-center  mt-4'>
-            <p className='text-l text-white font-bold'>2023 <span className='text-blue-400'>DOTLESS</span>. All right reserved.</p>
+            <p className='text-l text-white font-bold'>2025 <span className='text-blue-400'>DOTLESS</span>. All right reserved.</p>
         </div>
     </div>
   )

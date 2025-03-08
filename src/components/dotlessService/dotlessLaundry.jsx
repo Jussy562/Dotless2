@@ -1,4 +1,4 @@
-import React from 'react';
+
 import laundry from '/asset/laundry.jpg';
 import Button from '../button/button';
 

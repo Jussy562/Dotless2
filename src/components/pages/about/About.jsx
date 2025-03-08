@@ -1,4 +1,4 @@
-import React from 'react'
+
 import wash from '/asset/wash.jpg'
 import cleaning3 from '/asset/cleaning3.jpg'
 function About() {
@@ -49,7 +49,7 @@ function About() {
           Why Choose Dotless?
         </h3>
         <p className='text-lg text-gray-900 mb-8'>
-          Here's why Dotless is the right choice for all your cleaning needs:
+          Here is why Dotless is the right choice for all your cleaning needs:
         </p>
 
         <div className='w-full grid grid-cols-1 md:grid-cols-4 gap-4'>
